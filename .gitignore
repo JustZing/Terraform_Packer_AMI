@@ -1,0 +1,13 @@
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore .terraform directory (Terraform plugins and cache)
+.terraform/
+
+# Ignore Terraform plan files
+*.plan
+
+# Optional: Ignore Terraform lock file (can be version controlled, but optional)
+terraform.lock.hcl
+
