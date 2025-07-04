@@ -1,15 +1,14 @@
 # main.tf
-# Root configuration file calling the AWS provider and EC2 instance modules
+# Root configuration calling EC2 instance module
 
-module "aws_provider" {
-  source = "./modules/aws_provider"
-  region = var.region # Referencing the region variable
+provider "aws" {
+  region = var.region
 }
 
 module "ec2_instance" {
   source        = "./modules/ec2"
-  ami           = var.ami           # Referencing the ami variable
-  instance_type = var.instance_type # Referencing the instance type variable
-  name          = var.instance_name # Referencing the instance name variable
+  ami           = var.ami
+  instance_type = var.instance_type
+  name          = var.instance_name
 }
 
