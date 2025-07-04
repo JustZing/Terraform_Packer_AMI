@@ -1,10 +1,10 @@
 terraform {
-  backend "s3" {
-    bucket         = "terraformpackeramibackend"
-    key            = "terraform/state/terraform.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-    use_lockfile   = true
-    acl            = "bucket-owner-full-control"
+  backend "remote" {
+    organization = "Enterprise-Cloud-01"
+
+    workspaces {
+      name = "packer-petclinic-ami"
+    }
   }
 }
+
