@@ -6,3 +6,4 @@ This Terraform script automates the creation of an EC2 instance using an AMI  ge
 # Trigger test Thu Jul  3 21:45:28 EDT 2025
 # Trigger test Thu Jul  3 21:48:54 EDT 2025
 # Trigger test Thu Jul  3 22:03:04 EDT 2025
+# Trigger test Thu Jul  3 22:08:49 EDT 2025
